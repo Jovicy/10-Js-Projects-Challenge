@@ -8,14 +8,22 @@
     <!-- Links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Notepad</title>
+    <title>Todo App</title>
 </head>
 
 <body>
-    <button class="add-notes" id="add"><i class="fas fa-plus"></i> Add note</button>
-    
-    <!-- Javascript Links -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.2.12/marked.min.js"></script>
+
+    <h1>Todos</h1>
+    <form id="form">
+        <input type="text" class="input" id="input" placeholder="Enter your todos" autocomplete="off" />
+        <ul class="todos" id="todos">
+        </ul>
+    </form>
+    <small>left click to complete the todo <br>
+        Right click to delete the todo
+    </small>
+
+    <!-- Javascript link -->
     <script src="js/app.js" defer></script>
 </body>
 
